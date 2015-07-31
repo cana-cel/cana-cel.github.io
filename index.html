@@ -10,15 +10,18 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div id="wrapper">
     <header>
-        <h1><i class="fa fa-pencil-square"></i> Portfolio</h1>
+        <div id="top">
+            <h1><i class="fa fa-pencil-square"></i> Nishida's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile"><i class="fa fa-pencil"></i> プロフィール</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-pencil"></i> 作品</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-<!--     <nav>
-        <ul>
-            <li><a href="">プロフィール</a></li>
-            <li><a href="">作品</a></li>
-        </ul>
-    </nav> -->
     <main>
         <section id="profile">
             <h2><i class="fa fa-pencil"></i> プロフィール</h2>
@@ -99,5 +102,19 @@
     <footer>
     
     </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    
+    $('a[href^=#]').click(function() {
+      var speed = 400; // ミリ秒
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+
+</script>
 </body>
 </html>

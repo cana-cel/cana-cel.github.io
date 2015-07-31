@@ -1,72 +1,113 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body, html {
+    height: 100%;
+}
 body {
     background: url('../img/haikei.JPG') center center / cover no-repeat fixed;
     font-family: 'Noto Sans Japanese', sans-serif;
     font-size: 1.2em;
-
-    header {
-        color: white;
-        padding: 0 40px;
-    }
-
-    main {
-        margin: 0 100px;
-
-        section {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px 60px;
-            border-radius: 5px;
-            margin-bottom: 30px;
+    
+    #wrapper{
+        height: 143%;
+        header {
+            color: white;
+            //padding: 0 40px;
+            height: 70%;
+            min-height: 70%;
+            width: 100%;
+            #top {
+                display: block;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                margin-top: 200px;
+                font-size: 2em;
+                nav {
+                    //margin-left: 40px;
+                    font-size: 0.8em;
+                    ul {
+                        padding: 0;
+                        li {
+                            display: inline-block;
+                            margin: 0 10px;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            border-radius: 5px;
+                            padding: 10px;
+                            transition: 0.2s;
+                            a {
+                                color: black;
+                                text-decoration: none;
+                            }
+                        }
+                        li:hover {
+                            background-color: rgba(255, 255, 255, 0.9);
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }   
         }
 
-        #profile {
-            
-            img {
-                float: left;
-                margin-right: 20px;
-                margin-bottom: 120px;
-                width: 200px;
-            }
-            .profiles {
+        main {
+            margin: 0 100px;
+            height: 30%;
 
-                .profile {
-                    margin: 10px 0;
-                    .eduback {
-                        margin-bottom: 1em;
-                    }
-                    h4, p {
-                        margin: 0;
+            section {
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 10px 60px;
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+
+            #profile {
+                
+                img {
+                    float: left;
+                    margin-right: 20px;
+                    margin-bottom: 120px;
+                    width: 200px;
+                }
+                .profiles {
+
+                    .profile {
+                        margin: 10px 0;
+                        .eduback {
+                            margin-bottom: 1em;
+                        }
+                        h4, p {
+                            margin: 0;
+                        }
                     }
                 }
             }
-        }
-        #portfolio {
+            #portfolio {
 
-            
+                
 
-            h3 {
-                border-bottom: 1px solid #aaa;
-                clear: both;
-            }
-            .content {
-                h4 {
+                h3 {
+                    border-bottom: 1px solid #aaa;
                     clear: both;
                 }
-                img {
-                    width: 250px;
-                    border: 1px solid #aaa;
-                    float: left;
-                    margin-bottom: 50px;
-                    margin-right: 20px;
+                .content {
+                    h4 {
+                        clear: both;
+                    }
+                    img {
+                        width: 250px;
+                        border: 1px solid #aaa;
+                        float: left;
+                        margin-bottom: 50px;
+                        margin-right: 20px;
 
-                }
-                .description{
-                    margin: 0px;
-                    text-align: left;
-                    margin-bottom: 80px;
-                    p {
+                    }
+                    .description{
+                        margin: 0px;
                         text-align: left;
-                        margin: 1em 0;
+                        margin-bottom: 80px;
+                        p {
+                            text-align: left;
+                            margin: 1em 0;
+                        }
                     }
                 }
             }
@@ -77,32 +118,46 @@ body {
 @media screen and (max-width: 767px) {
     body {
         font-size: 1em;
-        header {
-            text-align: center;
-        }
-        main {
-            margin: 0 10px;
-            section {
-                padding: 10px 20px;
-            }
-            #profile {
-                .img {
-                    float: none;
-                    display: block;
-                    margin: 0 auto;
-                    width: 150px;
+        #wrapper { 
+            header {
+                text-align: center;
+                #top {
+                    margin-top: 50px;
+                    nav {
+                        ul {
+                            li {
+                                display: block;
+                                margin-bottom: 10px;
+                                padding: 5px;
+                            }
+                        }
+                    }
                 }
             }
-            #portfolio {
-                .content {
-                    img {
+            main {
+                margin: 0 10px;
+                section {
+                    padding: 10px 20px;
+                }
+                #profile {
+                    .img {
                         float: none;
                         display: block;
                         margin: 0 auto;
-                        width: 180px;
+                        width: 150px;
                     }
-                    .description {
-                        margin-bottom: 40px;
+                }
+                #portfolio {
+                    .content {
+                        img {
+                            float: none;
+                            display: block;
+                            margin: 0 auto;
+                            width: 180px;
+                        }
+                        .description {
+                            margin-bottom: 40px;
+                        }
                     }
                 }
             }
