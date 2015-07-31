@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body {
+  background: url("haikei.JPG") center center/cover no-repeat fixed;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 1.2em; }
+  body header {
+    color: white;
+    padding: 0 40px; }
+  body main {
+    margin: 0 100px; }
+    body main section {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px 60px;
+      border-radius: 5px;
+      margin-bottom: 30px; }
+    body main #profile img {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 120px;
+      width: 200px; }
+    body main #profile .profiles .profile {
+      margin: 10px 0; }
+      body main #profile .profiles .profile .eduback {
+        margin-bottom: 1em; }
+      body main #profile .profiles .profile h4, body main #profile .profiles .profile p {
+        margin: 0; }
+    body main #portfolio h3 {
+      border-bottom: 1px solid #aaa;
+      clear: both; }
+    body main #portfolio .content h4 {
+      clear: both; }
+    body main #portfolio .content img {
+      width: 250px;
+      border: 1px solid #aaa;
+      float: left;
+      margin-bottom: 50px;
+      margin-right: 20px; }
+    body main #portfolio .content .description {
+      margin: 0px;
+      text-align: left;
+      margin-bottom: 80px; }
+      body main #portfolio .content .description p {
+        text-align: left;
+        margin: 1em 0; }
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 1em; }
+    body header {
+      text-align: center; }
+    body main {
+      margin: 0 10px; }
+      body main section {
+        padding: 10px 20px; }
+      body main #profile .img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 150px; }
+      body main #portfolio .content img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 180px; }
+      body main #portfolio .content .description {
+        margin-bottom: 40px; } }
+
+/*# sourceMappingURL=style.css.map */
